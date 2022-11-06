@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/contacto', function () {
+    return view('paginas/contacto');
+});
+
+Route::get('/actualizaciones', function () {
+    return view('paginas.historico-actualizaciones');
+});
