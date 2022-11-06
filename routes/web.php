@@ -22,5 +22,11 @@ Route::get('/contacto', function () {
 });
 
 Route::get('/actualizaciones', function () {
-    return view('paginas.historico-actualizaciones');
+    $versionUno = 'Versión 1.0';
+    $versionDos = 'Versión 2.0';
+    return view('paginas.historico-actualizaciones', compact('versionUno', 'versionDos'));
+        // ->with([
+        //     'versionUno' => $versionUno,
+        //     'versionDos' => $versionDos
+        // ]);
 });

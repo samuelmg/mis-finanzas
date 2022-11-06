@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>Histórico de Actualizaciones</h1>
+    <p>
+        {{ $versionUno }}
+    </p>
+    <p>
+        {{ $versionDos }}
+    </p>
 </body>
 </html>
