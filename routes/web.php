@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contacto', [PaginaController::class, 'contacto']);
-Route::get('/actualizaciones/{version?}', [PaginaController::class, 'actualizaciones']);
+Route::get('/formulario-contacto', [PaginaController::class, 'contacto'])->name('contacto');
+Route::get('/actualizaciones/{version?}', [PaginaController::class, 'actualizaciones'])->name('actualizaciones');
